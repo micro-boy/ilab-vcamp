@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Digital marketing agency, Digital marketing company, Digital marketing services, sass, software company">
+		<meta name="description" content="vCamp Creative Personal Service HTML Template designed for personal service.">
+      	<meta property="og:site_name" content="vCamp">
+      	<meta property="og:url" content="https://heloshape.com/">
+      	<meta property="og:type" content="website">
+      	<meta property="og:title" content="vCamp-Creative Agency & Portfolio HTML5 Template">
+		<meta name='og:image' content='images/assets/ogg.png'>
+		<!-- For IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- For Resposive Device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- For Window Tab Color -->
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#202020">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#202020">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#202020">
+		<title>vCamp-Creative Agency & Portfolio Laravel Template</title>
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="56x56" href="{{ URL::asset('images/fav-icon/icon.png') }}">
+		<!-- Main style sheet -->
+		<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}" media="all">
+		<!-- responsive style sheet -->
+		<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/responsive.css') }}" media="all">
+
+		<!-- Fix Internet Explorer ______________________________________-->
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="{{ URL::asset('vendor/html5shiv.js') }}"></script>
+			<script src="{{ URL::asset('vendor/respond.js') }}"></script>
+		<![endif]-->	
+	</head>
+
+	<body>
+		<div class="main-page-wrapper">
+			<!-- ===================================================
+				Loading Transition
+			==================================================== -->
+			<section>
+				<div id="preloader">
+					<div id="ctn-preloader" class="ctn-preloader">
+						<div class="animation-preloader">
+							<div class="icon"><img src="{{ URL::asset('images/logo/vCamp.svg') }}" alt="" class="m-auto d-block"> <span></span></div>
+							<div class="txt-loading mt-4">
+								<span data-text-preloader="C" class="letters-loading">
+									C
+								</span>
+								<span data-text-preloader="A" class="letters-loading">
+									A
+								</span>
+								<span data-text-preloader="M" class="letters-loading">
+									M
+								</span>
+								<span data-text-preloader="P" class="letters-loading">
+									P
+								</span>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</section>
+
+			<!-- 
+			=============================================
+				Sidebar Nav
+			============================================== 
+			-->
+			<div class="offcanvas offcanvas-end sidebar-nav" tabindex="-1" id="offcanvasRight">
+				<div class="offcanvas-header">
+				    <div class="logo"><a href="{{ url('home.index') }}"><img src="{{ URL::asset('images/logo/vCamp_01.png') }}" alt="" width="127"></a></div>
+				    <button type="button" class="close-btn tran3s" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+				</div>
+			  	
+			  	<div class="sidebar-nav-item">
+			  		<ul class="style-none">
+			  			<li class="nav-item">
+			  				<a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">Home</a>
+			  				<ul class="dropdown-menu">
+							    <li><a href="{{ url('home.index') }}" class="dropdown-item"><span>Creative Agency</span></a></li>
+							    <li><a href="{{ url('home.index-2') }}" class="dropdown-item"><span>Business</span></a></li>
+							    <li><a href="{{ url('home.index-3') }}" class="dropdown-item"><span>Agency Minimal</span></a></li>
+							    <li><a href="{{ url('home.index-4') }}" class="dropdown-item"><span>Service Provider</span></a></li>
+							    <li><a href="{{ url('home.index-5') }}" class="dropdown-item"><span>Startup</span></a></li>
+							    <li><a href="{{ url('home.index-6') }}" class="dropdown-item"><span>Design Studio Light</span></a></li>
+							    <li><a href="{{ url('home.index-7') }}" class="dropdown-item"><span>Design Studio Dark</span></a></li>
+							    <li><a href="{{ url('home.index-8') }}" class="dropdown-item"><span>Shop Standard</span></a></li>
+							    <li><a href="{{ url('home.index-9') }}" class="dropdown-item"><span>Shop Creative</span></a></li>
+							    <li><a href="{{ url('home.index-10') }}" class="dropdown-item"><span>Startup Agency</span></a></li>
+							    <li><a href="{{ url('home.index-11') }}" class="dropdown-item"><span>Consulting Agency</span></a></li>
+							    <li><a href="{{ url('home.index-12') }}" class="dropdown-item"><span>Photographer Portfolio</span></a></li>
+							    <li><a href="{{ url('home.index-13') }}" class="dropdown-item"><span>Designer Portfolio</span></a></li>
+							    <li><a href="{{ url('home.index-14') }}" class="dropdown-item"><span>Marketing Agency</span></a></li>
+							    <li><a href="{{ url('home.index-15') }}" class="dropdown-item"><span>Design Agency Portfolio</span></a></li>
+								<li><a href="{{ url('home.index-16') }}" class="dropdown-item"><span>Startup Modern</span></a></li>
+							    <li><a href="{{ url('home.coming-soon') }}" class="dropdown-item"><span>Coming Soon</span></a></li>
+							</ul>
+			  			</li>
+			  			<li class="nav-item dropdown">
+					    	<a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">Portfolio</a>
+						    <ul class="dropdown-menu">
+					            <li><a href="{{ url('portfolio.boxed_layout.portfolioV1') }}" class="dropdown-item"><span>Portfolio Classic</span></a></li>
+					            <li><a href="{{ url('portfolio.boxed_layout.portfolioV7') }}" class="dropdown-item"><span>Portfolio Modern</span></a></li>
+					            <li><a href="{{ url('portfolio.boxed_layout.portfolioV24') }}" class="dropdown-item"><span>Portfolio carousel</span></a></li>
+					            <li><a href="{{ url('portfolio.dark_layout.portfolioV15') }}" class="dropdown-item"><span>Portfolio Video Lightbox</span></a></li>
+					            <li><a href="{{ url('portfolio.single_portfolio.portfolio-detailsV1') }}" class="dropdown-item"><span>Single Portfolio 01</span></a></li>
+							    <li><a href="{{ url('portfolio.single_portfolio.portfolio-detailsV2') }}" class="dropdown-item"><span>Single Portfolio 02</span></a></li>
+						    </ul>
+						</li>
+			  			<li class="nav-item">
+			  				<a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">Pages</a>
+			  				<ul class="dropdown-menu">
+							    <li><a href="{{ url('pages.essential.about-usV1') }}" class="dropdown-item"><span>About Minimal</span></a></li>
+								<li><a href="{{ url('pages.essential.teamV1') }}" class="dropdown-item"><span>Team Standard</span></a></li>
+								<li><a href="{{ url('pages.essential.pricingV2') }}" class="dropdown-item"><span>Pricing Standard: Dark</span></a></li>
+								<li><a href="{{ url('pages.support.serviceV1') }}" class="dropdown-item"><span>Service Minimal</span></a></li>
+								<li><a href="{{ url('pages.other.testimonialV1') }}" class="dropdown-item"><span>Testimonial Classic</span></a></li>
+							</ul>
+			  			</li>
+			  			<li class="nav-item"><a href="{{ url('blog.blogV1') }}">News</a></li>
+			  			<li class="nav-item"><a href="{{ url('pages.support.contactV1') }}">Contact us</a></li>
+			  		</ul>
+			  	</div>
+			  	<div><a href="{{ url('shop.sign-in') }}" class="theme-btn-one ripple-btn d-block"><img src="{{ URL::asset('images/icon/icon_22.svg') }}" alt="" class="me-2 ms-0"> login</a></div>
+			  	<form action="#" class="search-form">
+			  		<input type="text" placeholder="Search here..">
+			  		<button><i class="bi bi-search"></i></button>
+			  	</form>
+
+			  	<div class="address-block">
+			  		<h4 class="title">Our Address</h4>
+			  		<p>Chowrastar Mirpur- 1210, Sangu <br>River, Dhaka</p>
+			  		<p>Urgent issue? call us at <br><a href="tel:310.841.5500">310.841.5500</a></p>
+			  	</div>
+			  	<ul class="d-flex social-icon style-none mt-20">
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+				</ul>
+			</div> <!-- /.sidebar-nav -->
+
+
+			<!-- 
+			=============================================
+				Theme Main Menu
+			============================================== 
+			-->
+			<header class="theme-main-menu sticky-menu theme-menu-six">
+				<div class="inner-content">
+					<div class="d-flex align-items-center">
+						<div class="logo"><a href="{{ url('home.index') }}"><img src="{{ URL::asset('images/logo/vCamp_09.svg') }}" alt=""></a></div>
+						<div class="right-widget d-flex align-items-center ms-auto ms-lg-0 flex-lg-fill">
+							<form action="#" class="search-form d-none d-lg-block me-auto ms-4">
+								<input type="text" placeholder="Search here...">
+								<button class="tran3s"><i class="bi bi-search"></i></button>
+							</form>
+							<a href="{{ url('shop.sign-in') }}" class="d-flex align-items-center login-btn">
+								<img src="{{ URL::asset('images/icon/icon_01.svg') }}" alt="">
+								<span>login</span>
+							</a>
+                            <div class="cart-group-wrapper md-space-fix">
+								<button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+							    	<img src="{{ URL::asset('images/icon/icon_71.svg') }}" alt="" class="m-auto">
+							    	<span class="item-count">02</span>
+							  	</button>
+							  	<div class="dropdown-menu dropdown-menu-end">
+								    <ul class="style-none cart-product-list">
+										<li class="d-flex align-items-center selected-item">
+											<a href="#" class="item-img d-flex align-items-center justify-content-center">
+												<img src="{{ URL::asset('images/shop/img_18.png') }}" alt="">
+											</a>
+											<div class="item-info">
+												<a href="#" class="name">Rolex Watch</a>
+												<div class="price">$38.00 <span class="quantity">x 1</span></div>
+											</div> <!-- /.item-info -->
+										</li> <!-- /.selected-item -->
+										<li class="d-flex align-items-center selected-item">
+											<a href="#" class="item-img d-flex align-items-center justify-content-center">
+												<img src="{{ URL::asset('images/shop/img_19.png') }}" alt="">
+											</a>
+											<div class="item-info">
+												<a href="#" class="name">Vibrant Shoe.</a>
+												<div class="price">$125.00 <span class="quantity">x 1</span></div>
+											</div> <!-- /.item-info -->
+										</li> <!-- /.selected-item -->
+									</ul> <!-- /.cart-product-list -->
+									<div class="subtotal d-flex justify-content-between align-items-center">
+										<div class="title">Subtotal</div>
+										<div class="total-price">$163.00</div>
+									</div>
+									<ul class="style-none button-group">
+										<li><a href="{{ url('shop.cart') }}" class="view-cart">View Cart</a></li>
+										<li><a href="{{ url('shop.checkout') }}" class="checkout">Checkout</a></li>
+									</ul>
+							  	</div>
+							</div>
+							<button class="sidebar-nav-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="{{ URL::asset('images/icon/icon_68.svg') }}" alt=""></button>
+						</div> <!-- /.right-widget -->
+					</div>
+				</div> <!-- /.inner-content -->
+			</header> <!-- /.theme-main-menu -->
+
+
+			
+			<!-- 
+			=============================================
+				Theme Hero Banner
+			============================================== 
+			-->
+			<div class="hero-banner-fifteen mt-130 md-mt-90 pb-140 xl-pb-100 sm-pb-40">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-md-7">
+							<div class="text-wrapper pt-85 xl-pt-50">
+								<h1 class="hero-heading font-recoleta mb-55 lg-mb-30">Brand In-House development & More.</h1>
+								<a href="{{ url('pages.essential.about-usV1') }}" class="theme-btn-nineteen">Get Started</a>
+							</div> <!-- /.text-wrapper -->
+						</div>
+					</div>
+					<div class="img-wrapper" style="background-image: url(images/media/img_133.jpg);">
+						<img src="{{ URL::asset('images/assets/sticker_04.png') }}" alt="" class="brand-logo">
+						<div class="counter-section-two d-flex justify-content-end">
+							<div class="counter-container position-relative">
+								<div class="row g-0">
+									<div class="col-6">
+										<div class="counter-block-two text-center">
+											<div class="main-count"><span class="counter">3.5</span>k</div>
+											<p>Using vCamp</p>
+										</div> <!-- /.counter-block-two -->
+									</div>
+									<div class="col-6">
+										<div class="counter-block-two text-center bg-color">
+											<div class="main-count"><span class="counter">50</span>k+</div>
+											<p>Successfull Project</p>
+										</div> <!-- /.counter-block-two -->
+									</div>
+								</div>
+							</div> <!-- /.counter-container -->
+						</div> <!-- /.counter-section-two -->
+					</div>
+				</div>
+			</div> <!-- /.hero-banner-fifteen -->
+
+			
+
+			<!-- 
+			=============================================
+				Vcamp Feature Section Seventeen
+			============================================== 
+			-->
+			<div class="box-layout">
+				<div class="vcamp-feature-section-seventeen pt-60 md-pt-40 pb-100 md-pb-40">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3">
+								<div class="title-style-fourteen mb-30 lg-mb-10">
+									<h2 class="title">What we Do. <span class="line"></span></h2>
+								</div>
+							</div>
+						</div>
+						<div class="row gx-xl-5 justify-content-between">
+							<div class="col-lg-4 col-sm-6" data-aos="fade-up">
+								<div class="card-style-seventeen mt-50 xs-mt-40">
+									<div class="icon rounded-circle d-flex align-items-center justify-content-center"><img src="{{ URL::asset('images/icon/icon_119.svg') }}" alt="" class="tran3s"></div>
+									<h4 class="title">Marketing & Consulting</h4>
+									<p class="pe-xl-5">quis nostrud exercit ullamo ea laboris nisi ut aliqui duis aut iru. </p>
+									<a href="#" class="more-btn tran3s">Learn More <i class="bi bi-arrow-right"></i></a>
+								</div> <!-- /.card-style-seventeen -->
+							</div>
+							<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+								<div class="card-style-seventeen mt-50">
+									<div class="icon rounded-circle d-flex align-items-center justify-content-center"><img src="{{ URL::asset('images/icon/icon_120.svg') }}" alt="" class="tran3s"></div>
+									<h4 class="title">Development & Design</h4>
+									<p class="pe-xl-5">quis nostrud exercit ullamo ea laboris nisi ut aliqui duis aut iru. </p>
+									<a href="#" class="more-btn tran3s">Learn More <i class="bi bi-arrow-right"></i></a>
+								</div> <!-- /.card-style-seventeen -->
+							</div>
+							<div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+								<div class="card-style-seventeen mt-50">
+									<div class="icon rounded-circle d-flex align-items-center justify-content-center"><img src="{{ URL::asset('images/icon/icon_121.svg') }}" alt="" class="tran3s"></div>
+									<h4 class="title">Domain & Hosting</h4>
+									<p class="pe-xl-5">quis nostrud exercit ullamo ea laboris nisi ut aliqui duis aut iru. </p>
+									<a href="#" class="more-btn tran3s">Learn More <i class="bi bi-arrow-right"></i></a>
+								</div> <!-- /.card-style-seventeen -->
+							</div>
+						</div>
+					</div>
+				</div> <!-- /.vcamp-feature-section-seventeen -->
+			</div>
+
+
+
+			<!-- 
+			=============================================
+				Vcamp Text Block seventeen
+			============================================== 
+			-->
+			<div class="vcamp-text-block-seventeen mt-180 lg-mt-120 md-mt-80">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-5 col-md-6 order-md-last" data-aos="fade-left">
+							<div class="title-style-fourteen mb-40 md-mb-20">
+								<h2 class="title">Great Service with quality.</h2>
+							</div>
+							<p class="text-lg pb-40 md-pb-20">Hospitality managers use Sweeply to organize­­ all divisions better: housekeeping, engineering, guest services, maintenance, incidents, security, etc.</p>
+							<a href="{{ url('pages.essential.about-usV1') }}" class="theme-btn-nineteen">Get Started</a>
+						</div>
+						<div class="col-md-6 order-md-first me-auto" data-aos="fade-right">
+							<div class="img-gallery position-relative sm-mt-50">
+								<img src="{{ URL::asset('images/shape/shape_76.svg') }}" alt="" class="shapes shape-one">
+								<div class="row gx-xl-5 align-items-center">
+									<div class="col-5"><img src="{{ URL::asset('images/media/img_134.jpg') }}" alt="" class="w-100"></div>
+									<div class="col-7"><img src="{{ URL::asset('images/media/img_135.jpg') }}" alt="" class="w-100"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- /.vcamp-text-block-seventeen -->
+
+
+			<!--
+			=====================================================
+				Counter Section Three
+			=====================================================
+			-->
+			<div class="counter-section-three pt-150 lg-pt-100 md-pt-80">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4" data-aos="fade-up">
+							<div class="counter-block-three text-center mb-45">
+								<div class="main-count font-recoleta"><span class="counter">3.5</span>K</div>
+								<p class="theme-mb-0">Job done successfully</p>
+							</div> <!-- /.counter-block-three -->
+						</div>
+						<div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+							<div class="counter-block-three text-center mb-45">
+								<div class="main-count font-recoleta"><span class="counter">20</span>million</div>
+								<p class="theme-mb-0">3,280 avg rating</p>
+							</div> <!-- /.counter-block-three -->
+						</div>
+						<div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+							<div class="counter-block-three text-center mb-45">
+								<div class="main-count font-recoleta"><span class="counter">50</span>K</div>
+								<p class="theme-mb-0">Contact Profile</p>
+							</div> <!-- /.counter-block-three -->
+						</div>
+					</div>
+				</div>
+			</div> <!-- /.counter-section-three -->
+			
+
+
+			<!-- 
+			=============================================
+				Vcamp Text Block Eighteen
+			============================================== 
+			-->
+			<div class="vcamp-text-block-eighteen mt-180 xl-mt-150 lg-mt-80 sm-mt-50">
+				<div class="container">
+					<div class="position-relative">
+						<div class="row align-items-center">
+							<div class="col-lg-6 col-md-7" data-aos="fade-right">
+								<div class="title-style-fourteen mb-40 lg-mb-20">
+									<h2 class="title xl">Organize, communicate & collaborate</h2>
+								</div>
+								<p class="text-lg pb-40 lg-pb-20 pe-xl-5 me-xxl-5">Hospitality managers use Sweeply to organize­­ all divisions better: housekeeping, lorem engineering, guest services, maintenance and incidents, security, etc.</p>
+								<a href="{{ url('pages.essential.about-usV1') }}" class="theme-btn-nineteen">Lear more about us</a>
+							</div>
+						</div>
+						<div class="img-gallery sm-mt-40">
+							<img src="{{ URL::asset('images/shape/shape_76.svg') }}" alt="" class="shapes shape-one">
+							<img src="{{ URL::asset('images/media/img_136.jpg') }}" alt="" class="w-100">
+							<div class="block">
+								<div class="font-recoleta rating">A+</div>
+								<div>Rating</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- /.vcamp-text-block-eighteen -->
+
+
+
+
+			<!--
+			=====================================================
+				Portfolio Gallery Four
+			=====================================================
+			-->
+			<div class="portfolio-gallery-four mt-250 xl-mt-150 md-mt-100">
+				<div class="container">
+					<div class="title-style-fourteen mb-80 lg-mb-50">
+						<h2 class="title">Our portfolio. <span class="line"></span></h2>
+					</div>
+					<div class="grid-3column m0">
+						<div class="row">
+							<div class="col-lg-4 col-sm-6">
+								<div class="gallery-item mb-40 lg-mb-30">
+									<div class="img-holder">
+										<img src="{{ URL::asset('images/gallery/img_115.jpg') }}" alt="" class="img-meta w-100 tran6s">
+										<a class="fancybox tran3s overlay-icon zoom-icon" data-fancybox="" title="Click for large view" href="images/gallery/img_115.jpg" tabindex="0"><i class="bi bi-plus"></i></a>
+										<div class="caption tran3s d-flex justify-content-end flex-column">
+										</div> <!-- /.caption -->
+									</div>
+								</div> <!-- /.gallery-item -->
+							</div> <!-- /.isotop-item -->
+							<div class="col-lg-4 col-sm-6">
+								<div class="gallery-item mb-40 lg-mb-30">
+									<div class="img-holder">
+										<img src="{{ URL::asset('images/gallery/img_116.jpg') }}" alt="" class="img-meta w-100 tran6s">
+										<a class="fancybox tran3s overlay-icon zoom-icon" data-fancybox="" title="Click for large view" href="images/gallery/img_116.jpg" tabindex="0"><i class="bi bi-plus"></i></a>
+										<div class="caption tran3s d-flex justify-content-end flex-column">
+										</div> <!-- /.caption -->
+									</div>
+								</div> <!-- /.gallery-item -->
+							</div> <!-- /.isotop-item -->
+							<div class="col-lg-4 col-sm-6">
+								<div class="gallery-item mb-40 lg-mb-30">
+									<div class="img-holder">
+										<img src="{{ URL::asset('images/gallery/img_117.jpg') }}" alt="" class="img-meta w-100 tran6s">
+										<a class="fancybox tran3s overlay-icon zoom-icon" data-fancybox="" title="Click for large view" href="images/gallery/img_117.jpg" tabindex="0"><i class="bi bi-plus"></i></a>
+										<div class="caption tran3s d-flex justify-content-end flex-column">
+										</div> <!-- /.caption -->
+									</div>
+								</div> <!-- /.gallery-item -->
+							</div> <!-- /.isotop-item -->
+							<div class="col-lg-4 col-sm-6">
+								<div class="gallery-item mb-40 lg-mb-30">
+									<div class="img-holder">
+										<img src="{{ URL::asset('images/gallery/img_118.jpg') }}" alt="" class="img-meta w-100 tran6s">
+										<a class="fancybox tran3s overlay-icon zoom-icon" data-fancybox="" title="Click for large view" href="images/gallery/img_118.jpg" tabindex="0"><i class="bi bi-plus"></i></a>
+										<div class="caption tran3s d-flex justify-content-end flex-column">
+										</div> <!-- /.caption -->
+									</div>
+								</div> <!-- /.gallery-item -->
+							</div> <!-- /.isotop-item -->
+							<div class="col-lg-4 col-sm-6">
+								<div class="gallery-item mb-40 lg-mb-30">
+									<div class="img-holder">
+										<img src="{{ URL::asset('images/gallery/img_119.jpg') }}" alt="" class="img-meta w-100 tran6s">
+										<a class="fancybox tran3s overlay-icon zoom-icon" data-fancybox="" title="Click for large view" href="images/gallery/img_119.jpg" tabindex="0"><i class="bi bi-plus"></i></a>
+										<div class="caption tran3s d-flex justify-content-end flex-column">
+										</div> <!-- /.caption -->
+									</div>
+								</div> <!-- /.gallery-item -->
+							</div> <!-- /.isotop-item -->
+							<div class="col-lg-4 col-sm-6">
+								<div class="gallery-item mb-40 lg-mb-30">
+									<div class="img-holder">
+										<img src="{{ URL::asset('images/gallery/img_120.jpg') }}" alt="" class="img-meta w-100 tran6s">
+										<a class="fancybox tran3s overlay-icon zoom-icon" data-fancybox="" title="Click for large view" href="images/gallery/img_120.jpg" tabindex="0"><i class="bi bi-plus"></i></a>
+										<div class="caption tran3s d-flex justify-content-end flex-column">
+										</div> <!-- /.caption -->
+									</div>
+								</div> <!-- /.gallery-item -->
+							</div> <!-- /.isotop-item -->
+						</div>
+					</div>
+				</div>
+			</div> <!-- /.portfolio-gallery-four -->
+
+
+
+			<!-- 
+			=============================================
+				Feedback Section Fifteen
+			============================================== 
+			-->
+			<div class="feedback-section-fifteen mt-180 lg-mt-100 md-mt-80" data-aos="fade-up">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 order-lg-last">
+							<div class="title-style-fourteen mb-50 lg-mb-30">
+								<h2 class="title">Word from Our Clients. <span class="line"></span></h2>
+							</div>
+							<div class="feedback_slider_nine">
+								<div class="item">
+									<div class="testimonial-block-six">
+										<p>“Certainly from my perspective, WordPress has been a great success—with WordPress VIP giving us that enterprise-level of assured quality on top.”</p>
+										<h6 class="name">Jesica Cowdhury, <span>USA</span></h6>
+									</div> <!-- /.testimonial-block-six -->
+								</div>
+
+								<div class="item">
+									<div class="testimonial-block-six">
+										<p>“Having a home based business makes wonderful asset to your life. The <span>WordPress VIP</span> stands it comes time advertise your business for a cheap cost.”</p>
+										<h6 class="name">Frances Baldwin, <span>Houston</span></h6>
+									</div> <!-- /.testimonial-block-six -->
+								</div>
+
+								<div class="item">
+									<div class="testimonial-block-six">
+										<p>“Certainly from my perspective, WordPress has been a great success—with <span>WordPress VIP</span> giving us that enterprise-level of assured quality on top.”</p>
+										<h6 class="name">Michael Phillips, <span>Norwich</span></h6>
+									</div> <!-- /.testimonial-block-six -->
+								</div>
+							</div> <!-- /.feedback_slider_nine -->
+						</div>
+						<div class="col-xxl-6 col-lg-5 me-auto text-center text-lg-start">
+							<div class="img-box position-relative d-inline-block md-mt-50">
+								<img src="{{ URL::asset('images/media/img_137.jpg') }}" alt="" class="w-100">
+								<div class="rating-box">
+									<div class="rating">4.8</div>
+									<div>Rating</div>
+								</div>
+								<img src="{{ URL::asset('images/shape/shape_77.svg') }}" alt="" class="shapes shape_01">
+							</div>
+						</div>
+					</div>
+				</div> <!-- /.container -->
+			</div> <!-- /.feedback-section-fifteen -->
+
+
+
+
+			<!-- 
+			=============================================
+				Partner Section One
+			============================================== 
+			-->
+			<div class="partner-section-one mt-180 xl-mt-150 lg-mt-80 wow fadeInUp">
+				<div class="container">
+					<div class="top-header pb-50 lg-pb-40">
+						<div class="d-flex align-items-center justify-content-between">
+							<span class="lines"></span>
+							<div class="title text-uppercase tx-dark text-center">Over 30k+ Satisfied clients</div>
+							<span class="lines"></span>
+						</div>
+
+						<div class="partnerSliderOne mt-45 lg-mt-30">
+							<div class="item">
+								<div class="img-meta d-flex align-items-center justify-content-center"><img src="{{ URL::asset('images/logo/logo-30.png') }}" alt=""></div>
+							</div>
+							<div class="item">
+								<div class="img-meta d-flex align-items-center justify-content-center"><img src="{{ URL::asset('images/logo/logo-31.png') }}" alt=""></div>
+							</div>
+							<div class="item">
+								<div class="img-meta d-flex align-items-center justify-content-center"><img src="{{ URL::asset('images/logo/logo-32.png') }}" alt=""></div>
+							</div>
+							<div class="item">
+								<div class="img-meta d-flex align-items-center justify-content-center"><img src="{{ URL::asset('images/logo/logo-33.png') }}" alt=""></div>
+							</div>
+							<div class="item">
+								<div class="img-meta d-flex align-items-center justify-content-center"><img src="{{ URL::asset('images/logo/logo-34.png') }}" alt=""></div>
+							</div>
+							<div class="item">
+								<div class="img-meta d-flex align-items-center justify-content-center"><img src="{{ URL::asset('images/logo/logo-32.png') }}" alt=""></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- /.partner-section-one -->
+
+
+
+			<!--
+			=====================================================
+				Blog Section Eight
+			=====================================================
+			-->
+			<div class="blog-section-eight box-layout mt-180 xl-mt-150 lg-mt-80">
+				<div class="bg-wrapper pt-100 lg-pt-60 pb-100 lg-pb-60">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="row align-items-center">
+									<div class="col-xl-5 col-sm-6">
+										<div class="title-style-fourteen">
+											<h2 class="title">Our Blog</h2>
+										</div>
+									</div>
+									<div class="col-xl-7 col-sm-6 text-sm-end text-start">
+										<a href="{{ url('blog.blogV2') }}" class="theme-btn-three xs-mt-30">Check our all news<i class="fas fa-angle-right"></i></a>
+									</div>
+								</div>
+								<div class="mt-50 lg-mt-40">
+									<div class="row gx-xxl-5">
+										<div class="col-lg-4 col-md-6 d-flex md-mb-40">
+											<article class="blog-meta-seven w-100">
+												<div class="img-meta"><img src="{{ URL::asset('images/blog/blog_img_24.jpg') }}" alt="" class="w-100"></div>
+												<div class="post-meta">
+													<a href="{{ url('blog.blog-detailsV3') }}" class="tag tran3s text-uppercase">Technology</a>
+													<a href="{{ url('blog.blog-detailsV3') }}" class="title">Speaking remotely at WordCamp US.</a>
+													<p>Hospitality managers use Sweeply to organize­­ all divisions...</p>
+												</div>
+											</article> <!-- /.blog-meta-seven -->
+										</div>
+										<div class="col-lg-4 col-md-6 d-flex md-mb-40">
+											<article class="blog-meta-seven w-100">
+												<div class="img-meta"><img src="{{ URL::asset('images/blog/blog_img_25.jpg') }}" alt="" class="w-100"></div>
+												<div class="post-meta">
+													<a href="{{ url('blog.blog-detailsV3') }}" class="tag tran3s text-uppercase">BUSINESS</a>
+													<a href="{{ url('blog.blog-detailsV3') }}" class="title">Designer’s Checklist for UX/UI Project.</a>
+													<p>Hospitality managers use Sweeply to organize­­ all divisions...</p>
+												</div>
+											</article> <!-- /.blog-meta-seven -->
+										</div>
+										<div class="col-lg-4 col-md-6 d-flex md-mb-40">
+											<article class="blog-meta-seven w-100">
+												<div class="img-meta"><img src="{{ URL::asset('images/blog/blog_img_26.jpg') }}" alt="" class="w-100"></div>
+												<div class="post-meta">
+													<a href="{{ url('blog.blog-detailsV3') }}" class="tag tran3s text-uppercase">DESIGN</a>
+													<a href="{{ url('blog.blog-detailsV3') }}" class="title">Monthly Roundup event December 2022</a>
+													<p>Hospitality managers use Sweeply to organize­­ all divisions...</p>
+												</div>
+											</article> <!-- /.blog-meta-seven -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- /.blog-section-eight -->
+
+
+
+			<!--
+			=====================================================
+				Vcamp Fancy Banner Thirteen
+			=====================================================
+			-->
+			<div class="fancy-banner-thirteen position-relative pt-110 lg-pt-80">
+				<div class="container">
+					<div class="inner-content text-center pb-100 lg-pb-60">
+						<div class="title-style-one">
+							<h2 class="title">Want to learn <br class="d-none d-lg-block"> More About us? Let’s Talk</h2>
+						</div>
+						<p class="text-lg mt-30 mb-45">Don’t hesitate to send us a message for any query.</p>
+						<a href="#" class="theme-btn-seven">Purchase Now</a>
+					</div>
+				</div>
+			</div> <!-- /.fancy-banner-thirteen -->
+
+
+
+			<!--
+			=====================================================
+				Footer
+			=====================================================
+			-->
+			<footer class="vcamp-footer-two pt-120 lg-pt-100">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-3 col-lg-2 mb-40">
+							<div class="logo"><a href="{{ url('home.index') }}"><img src="{{ URL::asset('images/logo/vCamp_01.png') }}" alt="" width="127"></a></div>
+						</div>
+						<div class="col-lg-2 col-md-3 col-sm-6 mb-40">
+							<h5 class="title">Links</h5>
+							<ul class="footer-list style-none">
+								<li><a href="{{ url('home.index') }}">Home</a></li>
+								<li><a href="{{ url('pages.essential.pricingV1') }}">Pricing</a></li>
+								<li><a href="{{ url('pages.essential.about-usV1') }}">About us</a></li>
+								<li><a href="{{ url('pages.support.serviceV2') }}">Service</a></li>
+								<li><a href="{{ url('pages.support.serviceV3') }}">Features</a></li>
+								<li><a href="{{ url('blog.blogV4') }}">Blog</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 mb-40">
+							<h5 class="title">Legal</h5>
+							<ul class="footer-list style-none">
+								<li><a href="{{ url('pages.other.faqV1') }}">Terms of use</a></li>
+								<li><a href="{{ url('pages.other.faqV1') }}">Terms & conditions</a></li>
+								<li><a href="{{ url('pages.other.faqV1') }}">Privacy policy</a></li>
+								<li><a href="{{ url('pages.other.faqV1') }}">Cookie policy</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-4 col-md-6 mb-40">
+							<div class="newsletter">
+								<h5 class="title">Newslettert</h5>
+								<p>Join over <span>68,000</span> people getting our emails</p>
+								<form action="#">
+									<input type="email" placeholder="Enter your email">
+									<button class="dark-btn">Sign Up</button>
+								</form>
+								<div class="info">We only send interesting and relevant emails.</div>
+							</div> <!-- /.newsletter -->
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="bottom-footer" style="border-top: 1px solid #000;">
+						<div class="row">
+							<div class="col-lg-4 order-lg-1 mb-15">
+								<ul class="d-flex justify-content-center justify-content-lg-start footer-nav style-none">
+									<li><a href="{{ url('pages.other.faqV1') }}">Privacy & Terms.</a></li>
+									<li><a href="{{ url('pages.support.contactV1') }}">Contact Us</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-4 order-lg-3 mb-15">
+								<ul class="d-flex justify-content-center justify-content-lg-end social-icon style-none">
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+								</ul>
+							</div>
+							<div class="col-lg-4 order-lg-2 mb-15">
+								<p class="copyright text-center">Copyright @2022 vcamp inc.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer> <!-- /.vcamp-footer-two -->
+
+
+			<button class="scroll-top">
+				<i class="bi bi-arrow-up-short"></i>
+			</button>
+			
+			
+
+
+		<!-- Optional JavaScript _____________________________  -->
+
+    	<!-- jQuery first, then Bootstrap JS -->
+    	<!-- jQuery -->
+		<script src="{{ URL::asset('vendor/jquery.min.js') }}"></script>
+		<!-- Bootstrap JS -->
+		<script src="{{ URL::asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+		<!-- AOS js -->
+		<script src="{{ URL::asset('vendor/aos-next/dist/aos.js') }}"></script>
+		<!-- Slick Slider -->
+		<script src="{{ URL::asset('vendor/slick/slick.min.js') }}"></script>
+		<!-- js Counter -->
+		<script src="{{ URL::asset('vendor/jquery.counterup.min.js') }}"></script>
+		<script src="{{ URL::asset('vendor/jquery.waypoints.min.js') }}"></script>
+		<!-- Fancybox -->
+		<script src="{{ URL::asset('vendor/fancybox/dist/jquery.fancybox.min.js') }}"></script>
+		<!-- validator js -->
+    	<script src="{{ URL::asset('vendor/validator.js') }}"></script>
+
+		<!-- Theme js -->
+		<script src="{{ URL::asset('js/theme.js') }}"></script>
+		</div> <!-- /.main-page-wrapper -->
+	</body>
+</html>
